@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voitures de Luxe</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./public/style.css"/>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body class="bg-[#F7F3EE]">
 
     <div id="nav-container"></div>
 
     <script>
-      fetch("./src/nav.html")
+      fetch("nav.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("nav-container").innerHTML = data;
@@ -43,12 +43,12 @@
         
     </section>
     
-    <div id="listv-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+    <div id="listv-container"></div>
 
 
 
     <script>
-fetch("./src/liste-vehicule.html")
+fetch("liste-vehicule.html")
   .then((response) => response.text())
   .then((data) => {
     let container = document.getElementById("listv-container");
@@ -79,7 +79,7 @@ fetch("./src/liste-vehicule.html")
 
 
 <script>
-  fetch("./src/fin.html")
+  fetch("fin.html")
     .then((response) => response.text())
     .then((data) => {
       
@@ -95,7 +95,7 @@ fetch("./src/liste-vehicule.html")
 
 
 <script>
-  fetch("./src/footer.html")
+  fetch("footer.html")
     .then((response) => response.text())
     .then((data) => {
       document.getElementById("footer-container").innerHTML = data;
